@@ -53,16 +53,16 @@
         lower {
             // ------------------------------------------------------------------------------------------
             // |   ~   |  !   |  @   |  #   |  $   |  %   |   ^   |   &   |   *  |  -_   |   =+   | DEL   |
-            // |   ~   |  !   |  @   |  #   |  $   |  %   |   ^   |   &   |   *  |     |      | DEL   |
-            // |  DEL  |  F1  |  F2  |  F3  |  F4  |  F5  |  F6   |   -   |   +  |  [   |   ]   |  |    |
+            // |   ~   |  !   |  @   |  #   |  $   |  %   |   ^   |   &   |   *  |     |      |   |
+            // |  DEL  |  F1  |  F2  |  F3  |  F4  |  F5  |  F6   |   -   |   +  |     |      |   |    |
             // |       |  F7  |  F8  |  F9  |  F10 |  F11 |  F12  |       | LCTL | HOME |  END  |       |
             // | LALT  |      |      |      |      |      |       |       | NEXT | VOL- | VOL+  | PLAY  |
             bindings = <
                 &kp LS(GRAVE)  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                              &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp MINUS         &kp EQUAL          &kp DEL
-                &kp LS(GRAVE)  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                              &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DEL
-                &kp DEL        &kp F1      &kp F2      &kp F3      &kp F4      &kp F5              &kp C_PLAY          &kp F6      &kp MINUS   &kp PLUS    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SINGLE_QUOTE
-                &kp LSHIFT     &kp F7      &kp F8      &kp F9      &kp F10     &kp F11                                 &kp F12     &none       &kp LCTRL   &kp HOME          &kp END            &none
-                                                       &none       &trans      &none       &kp C_VOL_DN  &kp C_VOL_UP  &none       &mo RAISE   &kp C_NEXT
+                &kp LS(GRAVE)  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                              &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+                &none          &none       &none       &none       &none       &none             &none                 &none       &none       &none       &none             &kp SINGLE_QUOTE   &kp RET
+                &kp LSHIFT     &none       &none       &none       &none       &none                                   &none       &none       &none       &none             &none              &kp RSHIFT
+                                                       &none       &none       &kp SPACE     &none      &none          &kp SPACE   &none       &none
                 >;
         };
         raise {
